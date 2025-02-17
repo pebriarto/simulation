@@ -16,9 +16,10 @@ body {
     padding: 0;
 }
 
-.toggle-icon {
+.toggle-icon { /* Or .toggle-button img */
     width: 50px;
     height: 50px;
+    transition: transform 0.3s ease; /* Smooth rotation */
 }
 
 body.light-mode {
@@ -31,7 +32,7 @@ body.dark-mode {
     color: white;
 }
 
-body.dark-mode .toggle-button .toggle-icon {
+body.dark-mode .toggle-icon { /* Or body.dark-mode .toggle-button img */
     transform: rotate(180deg);
 }
 
