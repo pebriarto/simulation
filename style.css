@@ -16,10 +16,10 @@ body {
     padding: 0;
 }
 
-.toggle-icon { /* Or .toggle-button img */
+.toggle-icon {
     width: 50px;
     height: 50px;
-    transition: transform 0.3s ease; /* Smooth rotation */
+    transition: transform 0.3s ease; /* This line is crucial for smooth rotation */
 }
 
 body.light-mode {
@@ -32,13 +32,6 @@ body.dark-mode {
     color: white;
 }
 
-body.dark-mode .toggle-icon { /* Or body.dark-mode .toggle-button img */
-    transform: rotate(180deg);
-}
-
-/* Basic styling for the story text */
-#story {
-    font-size: 16px;
-    margin: 20px;
-    padding: 10px;
+body.dark-mode .toggle-icon {
+    transform: rotate.360deg; /* Corrected typo here */
 }
