@@ -1,2 +1,3 @@
 # simulation
-We're currently running a simulation to test the responsiveness of the website on different devices.
+We are now conducting a simulation to test the website's responsiveness across multiple devices.
+This project is led by a new front-end developer student.
