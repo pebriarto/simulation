@@ -10,33 +10,13 @@
 
     <body>
         <p>Click the button to toggle between dark and light mode for this page.</p>
-        <button onclick="toggleMode()">Toggle Mode</button>
+        <div class="container">
+        <button id="colorModeToggle" class="toggle-button">
+            <img src="day-and-night.png" alt="icon" class="toggle-icon">
+        </button>
+        </div>
 
-        <script>
-            // Mengecek localStorage saat halaman dimuat
-            function loadMode() {
-                var mode = localStorage.getItem("theme");
-                if (mode === "dark") {
-                    document.body.classList.add("dark-mode");
-                }
-            }
-
-            // Fungsi untuk mengganti mode dan menyimpannya di localStorage
-            function toggleMode() {
-                var element = document.body;
-                element.classList.toggle("dark-mode");
-
-                // Simpan mode ke localStorage
-                if (element.classList.contains("dark-mode")) {
-                    localStorage.setItem("theme", "dark");
-                } else {
-                    localStorage.setItem("theme", "light");
-                }
-            }
-
-            // Panggil loadMode() saat halaman pertama kali dimuat
-            loadMode();
-        </script>
+        <script src="script.js"></script>
 
         <h1>The Strings That Bind</h1>
         <p>In a small village surrounded by hills and forests, there was a family known for their wisdom and kindness. Edward was a quiet man with deep experience in farming. He had spent years working on the land, understanding the seasons, soil, and crops like the back of his hand. Edward worked hard as a farmer and was raising his teenage daughter, Sarah. She was smart but still learning about life.</p>
