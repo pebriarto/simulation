@@ -31,6 +31,10 @@ body.dark-mode {
     color: white;
 }
 
+body.dark-mode .toggle-button .toggle-icon {
+    transform: rotate(180deg);
+}
+
 /* Basic styling for the story text */
 #story {
     font-size: 16px;
