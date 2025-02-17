@@ -1,5 +1,6 @@
 const body = document.body;
 const colorModeToggle = document.getElementById('colorModeToggle');
+const storyDiv = document.getElementById('story'); // Getting the div ID
 
 // Function to set the color mode and save it to localStorage
 function setColorMode(mode) {
@@ -29,3 +30,11 @@ colorModeToggle.addEventListener('click', () => {
         setColorMode('light-mode');
     }
 });
+
+// Fetch the content from 'story.txt'
+fetch('story.txt')
+    .then(response => response.text())
+    .then(storyContent => {
+        storyDiv.innerHTML = storyContent; // Setting the content of the story
+    })
+    .catch(error => console.error('Error fetching story:', error));
